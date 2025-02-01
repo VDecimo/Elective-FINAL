@@ -49,7 +49,7 @@ function App() {
             alt=""
           />
 
-          <h1 className="text-3xl font-bold">Pokedex</h1>
+          <h1 className="text-3xl font-bold">BANTAYBUHAY</h1>
           {activeComponent === "animals" ? (
             <button
               onClick={handleStart}

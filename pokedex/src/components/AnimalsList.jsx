@@ -3,7 +3,7 @@ import { useState } from "react";
 export default function AnimalsList() {
   return (
     <div className="flex flex-col h-[calc(100%-2.5rem)] space-y-4 shadow-[4px_4px_0px_5px_#2e2e2e] rounded p-4">
-      <h1 className="text-lg font-bold">Philippine Endangered Species</h1>
+      <h1 className="text-lg font-bold">Philippine Most Endangered Species</h1>
 
       <div className="space-y-4 overflow-y-auto pb-2 scroll-smooth">
         {/* Replace the arrray with actual data */}

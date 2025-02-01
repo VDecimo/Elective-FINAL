@@ -26,9 +26,7 @@ export default function AnimalDescription(results) {
                 className="border-2 h-full w-24 rounded object-cover"
               ></img>
               <div className="flex flex-col space-y-4 justify-between h-full scrollable-hidden grow">
-                <h1 className="font-bold text-xl break-all">
-                  TarsierTarsierTarsierTarsierTarsierarsierTarsier
-                </h1>
+                <h1 className="font-bold text-xl break-all">Tarsier</h1>
                 <p className="w-full text-end">Discover More &rarr;</p>
               </div>
             </div>
