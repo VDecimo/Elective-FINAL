@@ -1,17 +1,17 @@
 import { useState } from "react";
 import AnimalsList from "./components/AnimalsList";
 import Camera from "./components/Camera";
-import AnimalDescription from "./components/AnimalDescription";
 import leftArrow from "./assets/left-arrow.svg";
 import "./App.css";
 
 function App() {
   // Set which component is active
   const [activeComponent, setActiveComponent] = useState("animals");
-  // Set the prev component redenred
+   // Set the prev component rendenred
   const [prevComponent, setPrevComponent] = useState(null);
   // Store the results of the image
   const [results, setResults] = useState(null);
+  const [selectedAnimal, setSelectedAnimal] = useState(null);
 
   // Render the camera component is the user click start
   const handleStart = () => {
@@ -30,7 +30,6 @@ function App() {
       setActiveComponent("animals");
     } else {
       setActiveComponent(prevComponent);
-
       // Reset results if the user back from AnimalDescription component
       setResults(null);
     }
@@ -39,22 +38,21 @@ function App() {
   return (
     <div className="flex h-screen items-center justify-center md:py-10">
       <div className="w-full md:w-[600px] h-full flex flex-col font-jura p-4 pb-6">
-        <nav className="flex h-10 mb-2 items-center justify-between ">
+        <nav className="flex h-10 mb-2 items-center justify-between">
           <img
             onClick={handleBack}
             className={`${
               prevComponent ? "block" : "hidden"
-            } cursor-pointer w-10 h-10 transform transition-all hover:translate-x-[-4px]`}
+            } cursor-pointer w-8 h-8 transform transition-all hover:translate-x-[-4px]`}
             src={leftArrow}
-            alt=""
+            alt="Back"
           />
-
           <h1 className="text-3xl font-bold">BANTAYBUHAY</h1>
           {activeComponent === "animals" ? (
             <button
               onClick={handleStart}
               type="button"
-              className={`border-2 rounded px-3 py-1 font-bold hover:bg-black hover:text-white cursor-pointer transform transition-all`}
+              className="border-2 rounded px-3 py-1 font-bold hover:bg-black hover:text-white cursor-pointer transform transition-all"
             >
               Start
             </button>
@@ -63,7 +61,15 @@ function App() {
           )}
         </nav>
 
-        {activeComponent === "animals" && <AnimalsList />}
+        {/* Keep Animals List as active component */}
+        {activeComponent === "animals" && (
+          <AnimalsList
+            setSelectedAnimal={setSelectedAnimal}
+            selectedAnimal={selectedAnimal}
+          />
+        )}
+
+        {/* Camera Component */}
         {activeComponent === "camera" && (
           <Camera
             setActiveComponent={setActiveComponent}
@@ -71,9 +77,6 @@ function App() {
             setResults={setResults}
             activeComponent={activeComponent}
           />
-        )}
-        {activeComponent === "description" && (
-          <AnimalDescription results={results} />
         )}
       </div>
     </div>
