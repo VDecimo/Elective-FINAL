@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import * as tmImage from "@teachablemachine/image";
 
-const model_url = "https://teachablemachine.withgoogle.com/models/PzUPM4bAl/"; //Ito ang Magic Model ni Teachable Machine 
+const model_url = "https://teachablemachine.withgoogle.com/models/PzUPM4bAl/"; //Ito ang Magic Model ni Teachable Machine
 const modelURL = model_url + "model.json";
 const metadataURL = model_url + "metadata.json";
 
@@ -15,7 +15,6 @@ export default function Camera({
   const [webcam, setWebcam] = useState(null);
   const [prediction, setPrediction] = useState("");
   const webcamRef = useRef(null);
-
 
   useEffect(() => {
     const loadModel = async () => {
@@ -48,26 +47,32 @@ export default function Camera({
   const handleCapture = async () => {
     if (model && webcam) {
       const predictions = await model.predict(webcam.canvas);
-      
+
       // Find the highest probability prediction
       const bestMatch = predictions.reduce((max, p) =>
         p.probability > max.probability ? p : max
       );
 
-        setResults(bestMatch.className);
-        setPrevComponent(activeComponent);
-        setActiveComponent("description");
+      setResults(bestMatch.className);
+      setPrevComponent(activeComponent);
+      setActiveComponent("description");
 
-        //Show The Best Match and Its Probability
-        alert(`Best match: ${bestMatch.className} with probability: ${bestMatch.probability.toFixed(2)}`);
-
+      //Show The Best Match and Its Probability
+      alert(
+        `Best match: ${
+          bestMatch.className
+        } with probability: ${bestMatch.probability.toFixed(2)}`
+      );
     }
   };
 
   return (
-    <div className="h-full flex flex-col items-center justify-center shadow-[4px_4px_0px_5px_#2e2e2e] rounded p-4">
+    <div className="h-full flex flex-col items-center justify-center p-4">
       <h1 className="text-lg font-bold">Snap Animal Photo</h1>
-      <div ref={webcamRef} className="border-2 w-full h-full sm:w-96 flex justify-center items-center"></div>
+      <div
+        ref={webcamRef}
+        className="border-2 w-full h-full sm:w-96 flex justify-center items-center"
+      ></div>
       <button
         onClick={handleCapture}
         type="button"
