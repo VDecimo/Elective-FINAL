@@ -810,6 +810,251 @@ const animalData = [
     threats: "Habitat loss and collection for trade",
     protection: "Protected under Philippine law",
   },
+  {
+    image:
+      "https://cdn.britannica.com/75/253875-050-8B6C565B/philippine-crocodile-Crocodylus-mindorensis-mindoro-crocodile-freshwater.jpg",
+    name: "Philippine Crocodile",
+    scientificName: "Crocodylus mindorensis",
+    status: "Critically Endangered",
+    size: "Length: up to 3 meters",
+    habitat:
+      "Freshwater habitats such as rivers, lakes, and marshes in the Philippines",
+    threats: "Habitat loss, hunting, and entanglement in fishing nets",
+    protection:
+      "Protected under Philippine law; conservation programs in place",
+    features:
+      "A small freshwater crocodile endemic to the Philippines, known for its pale coloration and small size compared to other crocodiles.",
+  },
+  {
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvenES4M9bbYmaXoEt6vNdP49UmDC6_YhDww&s",
+    name: "Luzon Narrow-mouthed Frog",
+    scientificName: "Kaloula conjuncta conjuncta",
+    status: "Least Concern",
+    size: "Length: approximately 5 cm",
+    habitat:
+      "Subtropical or tropical dry forests and moist lowland forests in Luzon, Philippines",
+    threats: "Habitat loss due to deforestation",
+    protection: "Not currently under specific protection measures",
+    features:
+      "A small, stout frog with a narrow mouth, often found in leaf litter in tropical forests.",
+  },
+  {
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtcYnJzHW2X8E3gTSVhJfhy31nExcQxA_bUA&s",
+    name: "Mindoro Tree Frog",
+    scientificName: "Leptobrachium mangyanorum",
+    status: "Vulnerable",
+    size: "Males: 36 mm; Females: 46 mm",
+    habitat:
+      "Pristine higher elevation forests to disturbed, near coastal regions in Mindoro, Philippines",
+    threats:
+      "Habitat loss from agriculture and wood collection; tadpole harvesting",
+    protection:
+      "Present in Mount Calavite Wildlife Sanctuary and Mounts Iglit-Baco National Park",
+    features:
+      "A tree-dwelling frog with distinct, bright markings on its body, known for its ability to climb trees and shrubs.",
+  },
+  {
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZctFvzUIgKAIojXl6bATjT9YigqW9A2biwQ&s",
+    name: "Panay Narrow-mouthed Frog",
+    scientificName: "Kaloula conjuncta negrosensis",
+    status: "Least Concern",
+    size: "Length: approximately 5 cm",
+    habitat:
+      "Subtropical or tropical dry forests and moist lowland forests in Panay, Philippines",
+    threats: "Habitat loss due to deforestation",
+    protection: "Not currently under specific protection measures",
+    features:
+      "A small, dark-colored frog often found in moist areas within forests, with a distinctive narrow mouth.",
+  },
+  {
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX8wzQWr2cL69M--kDrh51Y_xr9zkgfzKytg&s",
+    name: "Visayan Warty Frog",
+    scientificName: "Kaloula conjuncta negrosensis",
+    status: "Least Concern",
+    size: "Length: approximately 5 cm",
+    habitat:
+      "Subtropical or tropical dry forests and moist lowland forests in the Visayas region, Philippines",
+    threats: "Habitat loss due to deforestation",
+    protection: "Not currently under specific protection measures",
+    features:
+      "A stout, warty frog, typically found in leaf litter in humid environments.",
+  },
+  {
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0er2ez8-ho-pc8MwlCOg8ewXdghDAxoEC_Q&s",
+    name: "Samar Stream Frog",
+    scientificName: "Kaloula conjuncta stickeli",
+    status: "Least Concern",
+    size: "Length: approximately 5 cm",
+    habitat:
+      "Subtropical or tropical dry forests and moist lowland forests near streams in Samar, Philippines",
+    threats: "Habitat loss due to deforestation",
+    protection: "Not currently under specific protection measures",
+    features:
+      "A small, aquatic frog that inhabits stream edges and moist areas in forested regions.",
+  },
+  {
+    image:
+      "https://animalsoftanay.home.blog/wp-content/uploads/2019/08/highcompress-img_3650.jpg",
+    name: "Philippine Tree Frog",
+    scientificName: "Platymantis corrugatus",
+    status: "Least Concern",
+    size: "Length: approximately 5 cm",
+    habitat:
+      "Tropical moist lowland and montane forests throughout the Philippines except Palawan",
+    threats: "Habitat loss due to deforestation",
+    protection: "Not currently under specific protection measures",
+    features:
+      "A small, tree-dwelling frog that thrives in moist, tropical forests across the Philippines.",
+  },
+  {
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbpoeXyfQ5uF0wUgt9jm1VqLaLRk-mQgXepA&s",
+    name: "Palawan Horned Frog",
+    scientificName: "Megophrys ligayae",
+    status: "Endangered",
+    size: "Length: approximately 8 cm",
+    habitat:
+      "Subtropical or tropical moist lowland forests in Palawan, Philippines",
+    threats: "Habitat loss due to deforestation",
+    protection: "Protected under Philippine law",
+    features:
+      "A horned, leaf-litter-dwelling frog known for its camouflaged appearance in its forest habitat.",
+  },
+  {
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThGDf5kBjAR4s9uNGflL6ec33nPY4W1yMW2w&s",
+    name: "Polillo Forest Frog",
+    scientificName: "Platymantis polillensis",
+    status: "Least Concern",
+    size: "Length: approximately 5 cm",
+    habitat:
+      "Subtropical or tropical dry and moist lowland forests in Polillo Island and adjacent areas in Luzon, Philippines",
+    threats: "Habitat loss due to deforestation",
+    protection: "Not currently under specific protection measures",
+    features:
+      "A small, stout frog often found in dry forest areas, with a flattened body to aid in hiding under leaves.",
+  },
+  {
+    image:
+      "https://www.researchgate.net/publication/363486480/figure/fig9/AS:11431281084060405@1663002389778/Kaloula-conjuncta-negrosensis-UPLB-MNH-Z-NS-4533-found-in-the-trail-at-Location-4-1492.png",
+    name: "Negros Narrow-mouthed Frog",
+    scientificName: "Kaloula conjuncta negrosensis",
+    status: "Least Concern",
+    size: "Length: approximately 5 cm",
+    habitat:
+      "Subtropical or tropical dry forests and moist lowland forests in Negros, Philippines",
+    threats: "Habitat loss due to deforestation",
+    protection: "Not currently under specific protection measures",
+    features:
+      "A small, terrestrial frog with distinctive markings, found in moist lowland areas of Negros.",
+  },
+  {
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGG7P_zbxf-hSjclrAUCPnmPsCP3tMinccRw&s",
+    name: "Atlas Moth (Philippine subspecies)",
+    scientificName: "Attacus atlas",
+    status: "Not Evaluated",
+    size: "Wingspan: up to 30 cm",
+    habitat: "Tropical and subtropical forests in the Philippines",
+    threats: "Habitat loss due to deforestation",
+    protection: "Not currently under specific protection measures",
+    features:
+      "One of the largest moths in the world, known for its large, striking wings with intricate patterns.",
+  },
+  {
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpNHauPZ4X3S4_sQT7QsnUOfUjnxKwsvdynQ&s",
+    name: "Magellan Birdwing Butterfly",
+    scientificName: "Troides magellanus",
+    status: "Not Evaluated",
+    size: "Wingspan: approximately 18 cm",
+    habitat: "Forests in the Philippines and Orchid Island, Taiwan",
+    threats: "Habitat loss and collection for trade",
+    protection: "Listed under CITES Appendix II",
+    features:
+      "A large, colorful butterfly species with black and yellow wings, known for its vibrant appearance.",
+  },
+  {
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCKvc30GOew443e46LEyEdSGDBFNiJbD4x8Q&s",
+    name: "Cebu Hawk Moth",
+    scientificName: "Cephonodes hylas",
+    status: "Not Evaluated",
+    size: "Wingspan: approximately 4.5 cm",
+    habitat:
+      "Various habitats including gardens and forests in Cebu, Philippines",
+    threats: "Not well-documented",
+    protection: "Not currently under specific protection measures",
+    features:
+      "A small, active moth with a distinctive hawk-like flight pattern and vibrant green coloration.",
+  },
+  {
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgw6WCGj1OlnVyoqavEr1FUPe2U7qzgRmF-A&s",
+    name: "Palawan Hornbill Moth",
+    scientificName: "Lyssa zampa",
+    status: "Not Evaluated",
+    size: "Wingspan: up to 16 cm",
+    habitat: "Forests in Palawan, Philippines",
+    threats: "Not well-documented",
+    protection: "Not currently under specific protection measures",
+    features:
+      "A large, striking moth with distinctive hornbill-like appearance.",
+  },
+  {
+    image:
+      "https://static.wixstatic.com/media/8b9765_15e28d6206ec40bf9fb73ce0d3ee8c1c~mv2.jpg/v1/fill/w_590,h_424,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/8b9765_15e28d6206ec40bf9fb73ce0d3ee8c1c~mv2.jpg",
+    name: "Giant Philippine Swallowtail Butterfly",
+    scientificName: "Papilio chikae",
+    status: "Endangered",
+    size: "Wingspan: approximately 12 cm",
+    habitat: "Montane forests in Luzon, Philippines",
+    threats: "Habitat loss and collection for trade",
+    protection: "Protected under Philippine law",
+    features: "A large, majestic butterfly known for its vibrant colors.",
+  },
+  {
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_iiWCaueW-tfNexJqc7ISv03bhPevLGxElg&s",
+    name: "Luzon Tree Nymph Butterfly",
+    scientificName: "Idea leuconoe",
+    status: "Not Evaluated",
+    size: "Wingspan: approximately 15 cm",
+    habitat: "Forests in Luzon, Philippines",
+    threats: "Habitat loss due to deforestation",
+    protection: "Not currently under specific protection measures",
+    features:
+      "A delicate butterfly with transparent wings and striking patterns.",
+  },
+  {
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP-tEL-WZWOLnRpDIxGfnudh5XP5MEuaxaEQ&s",
+    name: "Philippine Stag Beetle",
+    scientificName: "Dorcus titanus palawanicus",
+    status: "Not Evaluated",
+    size: "Length: up to 9 cm",
+    habitat: "Forests in Palawan, Philippines",
+    threats: "Habitat loss and collection for trade",
+    protection: "Not currently under specific protection measures",
+    features: "A large beetle with prominent antler-like horns.",
+  },
+  {
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsOnbScLO7zjhj1Z9q34P1UB3bptciToEnXA&s",
+    name: "Mindoro Jewel Beetle",
+    scientificName: "Chrysochroa mindoroensis",
+    status: "Not Evaluated",
+    size: "Length: approximately 3 cm",
+    habitat: "Forests in Mindoro, Philippines",
+    threats: "Habitat loss due to deforestation",
+    protection: "Not currently under specific protection measures",
+    features: "A brilliantly colored beetle known for its jewel-like shine.",
+  },
 ];
 
 export default animalData;
