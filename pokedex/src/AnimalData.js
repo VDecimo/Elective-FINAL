@@ -217,6 +217,599 @@ const animalData = [
     threats: "Hunting, Habitat destruction",
     protection: "Protected by Philippine law, CITES Appendix I",
   },
+  {
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Crocidura_russula_%28Huisspitsmuis%29.jpg/640px-Crocidura_russula_%28Huisspitsmuis%29.jpg",
+    name: "Negros Shrew",
+    scientificName: "Crocidura negrina",
+    status: "Critically Endangered",
+    features:
+      "Small insectivorous mammal with a pointed snout and short fur, endemic to Negros Island.",
+    size: "Length: 10-12 cm, Weight: 20-30 g",
+    habitat: "Negros Island, Philippines",
+    threats: "Habitat loss, Limited range",
+    protection: "Protected by Philippine law",
+  },
+  {
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkKfaCIuCmtYYhRM3YaMTNP-Yt5Ke1SjobLw&s",
+    name: "Philippine Tube-nosed Fruit Bat",
+    scientificName: "Nyctimene rabori",
+    status: "Endangered",
+    features:
+      "Medium-sized bat with distinctive tubular nostrils, primarily frugivorous.",
+    size: "Wingspan: 0.5-0.6 m, Weight: 40-60 g",
+    habitat: "Forests of the Philippines",
+    threats: "Habitat destruction, Hunting",
+    protection: "Protected by Philippine law, CITES Appendix II",
+  },
+  {
+    image:
+      "https://nhmu.utah.edu/sites/default/files/styles/2x_small_320w/public/embedded_images/Shrew%20rat%20%28Rhynchomys%20soricoides%29.jpg?itok=9pYkBYQl",
+    name: "Luzon Shrew",
+    scientificName: "Crocidura grayi",
+    status: "Least Concern",
+    features:
+      "Small, insectivorous mammal with a slender body and elongated snout.",
+    size: "Length: 8-10 cm, Weight: 15-25 g",
+    habitat: "Luzon Island, Philippines",
+    threats: "Habitat disturbance",
+    protection: "Protected by Philippine law",
+  },
+  {
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/2/2d/Common_Mindanao_shrew.jpg",
+    name: "Panay Shrew",
+    scientificName: "Crocidura panayensis",
+    status: "Endangered",
+    features:
+      "Small, elusive shrew with a pointed nose and dark brown fur, endemic to Panay Island.",
+    size: "Length: 9-11 cm, Weight: 18-28 g",
+    habitat: "Panay Island, Philippines",
+    threats: "Habitat destruction",
+    protection: "Protected by Philippine law",
+  },
+  {
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVgqjy6eomr3iM7AoXIm4wmXsKgTM-4C1Lqw&s",
+    name: "Mindanao Pygmy Fruit Bat",
+    scientificName: "Alionycteris paucidentata",
+    status: "Vulnerable",
+    features:
+      "Small fruit bat with a short snout and rounded ears, primarily feeds on soft fruits.",
+    size: "Wingspan: 0.4-0.5 m, Weight: 30-50 g",
+    habitat: "Forests of Mindanao, Philippines",
+    threats: "Habitat destruction",
+    protection: "Protected by Philippine law",
+  },
+  {
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUlbXkySAQbVRrgBW4E-TtC1E5aYHSA90m5A&s",
+    name: "Dinagat Bushy-tailed Cloud Rat",
+    scientificName: "Crateromys australis",
+    status: "Endangered",
+    features:
+      "A rare nocturnal rodent with long, bushy fur, native to the forests of Dinagat Island.",
+    size: "Length: 30-35 cm, Weight: 1-1.5 kg",
+    habitat: "Dinagat Island, Philippines",
+    threats: "Habitat loss, Hunting",
+    protection: "Protected by Philippine law, CITES Appendix I",
+  },
+  {
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzKfH5eVdvGcULe-f6K1mFKZJqdTMs5fY5p3anIEef3B0HBSqrU8qzaBWkxhJZGqk1WtY&usqp=CAU",
+    name: "Northern Luzon Giant Cloud Rat",
+    scientificName: "Phloeomys pallidus",
+    status: "Near Threatened",
+    features:
+      "A large, slow-moving rodent with thick fur, primarily active at night in Luzon forests.",
+    size: "Length: 45-50 cm, Weight: 1.5-2.3 kg",
+    habitat: "Northern Luzon, Philippines",
+    threats: "Habitat destruction, Hunting",
+    protection: "Protected by Philippine law",
+  },
+  {
+    image:
+      "https://i.pinimg.com/736x/01/b6/66/01b6667c510eb1cf6ba7bc95672c90c5.jpg",
+    name: "Mindoro Tree Squirrel",
+    scientificName: "Sundasciurus mindanensis",
+    status: "Vulnerable",
+    features:
+      "A small, agile squirrel with sharp claws, adapted for life in tree canopies on Mindoro Island.",
+    size: "Length: 20-25 cm, Weight: 200-300 g",
+    habitat: "Mindoro Island, Philippines",
+    threats: "Habitat destruction",
+    protection: "Protected by Philippine law",
+  },
+  {
+    image: "https://live.staticflickr.com/7153/6721548081_b678c19011_c.jpg",
+    name: "Philippine Hawk-Eagle",
+    scientificName: "Nisaetus philippensis",
+    status: "Vulnerable",
+    features:
+      "A medium-sized raptor with sharp talons and keen eyesight, found in Philippine forests.",
+    size: "Length: 65-70 cm; Weight: 1.8-2.3 kg",
+    habitat:
+      "Tropical moist lowland and montane forests in Luzon, Samar, Leyte, and Mindanao",
+    threats: "Habitat loss due to deforestation",
+    protection: "Protected under Philippine law; Listed in CITES Appendix II",
+  },
+  {
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4FXSQhUPFAdAuzjgerljTQuSAXL-5Qw7pow&s",
+    name: "Philippine Cockatoo",
+    scientificName: "Cacatua haematuropygia",
+    status: "Critically Endangered",
+    features:
+      "A small, white cockatoo with a pale yellow underwing and red-orange under-tail coverts, known for its loud calls.",
+    size: "Length: 30-31 cm; Weight: 300-360 g",
+    habitat:
+      "Lowland primary and secondary forests, mangroves, and coastal areas",
+    threats: "Habitat loss, illegal pet trade",
+    protection: "Protected by law; conservation efforts ongoing in Palawan",
+  },
+  {
+    image:
+      "https://philippineendangered.wordpress.com/wp-content/uploads/2015/10/363380661_26ee0f3fa5.jpg",
+    name: "Cebu Flowerpecker",
+    scientificName: "Dicaeum quadricolor",
+    status: "Critically Endangered",
+    features:
+      "A small songbird with a striking red, yellow, and black plumage, endemic to Cebu.",
+    size: "Length: 11 cm",
+    habitat: "Forest remnants in Cebu, Philippines",
+    threats: "Habitat destruction due to deforestation",
+    protection: "Protected by Philippine law; conservation efforts ongoing",
+  },
+  {
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9NOE6ZUyeP57lihDVfdKHZR-ADKw_AToH1Q&s",
+    name: "Visayan Hornbill",
+    scientificName: "Penelopides panini",
+    status: "Endangered",
+    features:
+      "A medium-sized hornbill with a distinctive curved bill, primarily black with white and yellowish plumage.",
+    size: "Length: 45 cm",
+    habitat: "Forests of Negros and Panay, Philippines",
+    threats: "Deforestation and hunting",
+    protection:
+      "Protected under Philippine law; conservation efforts in progress",
+  },
+  {
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/9/9a/Palawan_Peacock_Pheasant_-_male.jpg",
+    name: "Palawan Peacock-Pheasant",
+    scientificName: "Polyplectron napoleonis",
+    status: "Vulnerable",
+    features:
+      "A strikingly beautiful pheasant with iridescent blue and green feathers, endemic to Palawan.",
+    size: "Length: 50 cm",
+    habitat: "Forests of Palawan, Philippines",
+    threats: "Habitat destruction and hunting",
+    protection: "Protected by law; conservation breeding programs ongoing",
+  },
+  {
+    image:
+      "https://cdn.download.ams.birds.cornell.edu/api/v2/asset/267086761/900",
+    name: "Rufous Hornbill",
+    scientificName: "Buceros hydrocorax",
+    status: "Vulnerable",
+    features:
+      "A large hornbill with a deep rufous body, black wings, and a massive red casque on its bill.",
+    size: "Length: 65-80 cm",
+    habitat: "Forests in Luzon, Samar, Leyte, and Mindanao",
+    threats: "Deforestation, hunting",
+    protection: "Protected under Philippine law",
+  },
+  {
+    image:
+      "https://ferrebeekeeper.wordpress.com/wp-content/uploads/2016/07/mindanao_bleeding_heart_dov-600x560.jpg?w=584",
+    name: "Luzon Bleeding-Heart",
+    scientificName: "Gallicolumba luzonica",
+    status: "Near Threatened",
+    features:
+      "A pigeon species known for its distinctive bleeding heart-shaped markings.",
+    size: "Length: 25-30 cm",
+    habitat: "Forests of Luzon, Philippines",
+    threats: "Habitat destruction, hunting",
+    protection: "Protected under Philippine law",
+  },
+  {
+    image:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/345659135/medium.jpg",
+    name: "Mindoro Bleeding-Heart",
+    scientificName: "Gallicolumba platenae",
+    status: "Endangered",
+    features:
+      "A critically endangered species with a striking red chest marking.",
+    size: "Length: 25 cm",
+    habitat: "Forests of Mindoro, Philippines",
+    threats: "Deforestation, hunting",
+    protection: "Protected under Philippine law",
+  },
+  {
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGpT-LdT0CCyrHpmodF3s0icTIcmVavtuBrA&s",
+    name: "Negros Bleeding-Heart",
+    scientificName: "Gallicolumba keayi",
+    status: "Critically Endangered",
+    features: "A rare and colorful pigeon native to Negros and Panay islands.",
+    size: "Length: 26 cm",
+    habitat: "Forests of Negros and Panay, Philippines",
+    threats: "Habitat destruction, hunting",
+    protection: "Strictly protected under Philippine law",
+  },
+  {
+    image:
+      "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/395226051/320",
+    name: "Flame-templed Babbler",
+    scientificName: "Dasycrotapha speciosa",
+    status: "Vulnerable",
+    features:
+      "A small songbird with bright orange plumage on its head and throat.",
+    size: "Length: 14 cm",
+    habitat: "Forests of Negros and Panay, Philippines",
+    threats: "Deforestation",
+    protection: "Protected under Philippine law",
+  },
+  {
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCCsMV_Js4hwI0JhC57FaFHp5vnmAQDkNcWA&s",
+    name: "Mindanao Wattled Broadbill",
+    scientificName: "Eurylaimus steerii",
+    status: "Near Threatened",
+    features:
+      "A colorful broadbill bird native to Mindanao with distinct wattle features.",
+    size: "Length: 15-17 cm",
+    habitat: "Forests of Mindanao, Philippines",
+    threats: "Habitat loss",
+    protection: "Protected under Philippine law",
+  },
+  {
+    image:
+      "https://cdn.download.ams.birds.cornell.edu/api/v2/asset/267267151/900",
+    name: "Philippine Frogmouth",
+    scientificName: "Batrachostomus septimus",
+    status: "Least Concern",
+    features: "A nocturnal bird with a wide mouth, resembling a frog's.",
+    size: "Length: 23 cm",
+    habitat: "Forests of the Philippines",
+    threats: "Habitat loss",
+    protection: "Protected under Philippine law",
+  },
+  {
+    image:
+      "https://cdn.download.ams.birds.cornell.edu/api/v2/asset/334335371/320",
+    name: "Yellow-breasted Fruit Dove",
+    scientificName: "Ptilinopus occipitalis",
+    status: "Near Threatened",
+    features:
+      "A brightly colored dove with a yellow breast, found in tropical forests.",
+    size: "Length: 27 cm",
+    habitat: "Forests of the Philippines",
+    threats: "Deforestation, hunting",
+    protection: "Protected under Philippine law",
+  },
+  {
+    image:
+      "https://cdn.download.ams.birds.cornell.edu/api/v2/asset/348938501/900",
+    name: "Black-hooded Coucal",
+    scientificName: "Centropus steerii",
+    status: "Endangered",
+    features: "A medium-sized coucal with a black hood and distinctive calls.",
+    size: "Length: 40 cm",
+    habitat: "Forests of Mindoro, Philippines",
+    threats: "Habitat destruction",
+    protection: "Protected under Philippine law",
+  },
+  {
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRngOTqmTvo-e0prTNNy3nfPMXKbOC3ygGABQ&s",
+    name: "Blue-naped Parrot",
+    scientificName: "Tanygnathus lucionensis",
+    status: "Near Threatened",
+    features:
+      "A parrot species with a blue patch on its nape, native to the Philippines.",
+    size: "Length: 31 cm",
+    habitat: "Forests and mangroves of the Philippines",
+    threats: "Habitat destruction, pet trade",
+    protection: "Protected under Philippine law",
+  },
+  {
+    image:
+      "https://cdn.download.ams.birds.cornell.edu/api/v2/asset/374212881/900",
+    name: "Whiskered Pitta",
+    scientificName: "Erythropitta kochi",
+    status: "Near Threatened",
+    features: "A small, colorful bird with whiskers on its face.",
+    size: "Length: 16 cm",
+    habitat: "Forests of Luzon, Philippines",
+    threats: "Deforestation",
+    protection: "Protected under Philippine law",
+  },
+  {
+    image:
+      "https://cdn.download.ams.birds.cornell.edu/api/v2/asset/388691871/900",
+    name: "Philippine Bulbul",
+    scientificName: "Hypsipetes philippinus",
+    status: "Least Concern",
+    features:
+      "A small, common songbird found in the Philippines, with an olive-green body.",
+    size: "Length: 25 cm",
+    habitat: "Forest edges and secondary growth in the Philippines",
+    threats: "Habitat destruction",
+    protection: "Protected under Philippine law",
+  },
+  {
+    image:
+      "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/379457731/320",
+    name: "Balicassiao",
+    scientificName: "Ixos philippinus",
+    status: "Least Concern",
+    features:
+      "A small, active songbird commonly found in the forests of Luzon.",
+    size: "Length: 24 cm",
+    habitat: "Forests of Luzon and nearby islands",
+    threats: "Habitat loss",
+    protection: "Protected under Philippine law",
+  },
+  {
+    image:
+      "https://cdn.download.ams.birds.cornell.edu/api/v2/asset/267125321/900",
+    name: "Philippine Scops Owl",
+    scientificName: "Otus megalotis",
+    status: "Near Threatened",
+    features:
+      "A small owl endemic to the Philippines, typically found in lowland and montane forests.",
+    size: "Length: 22 cm",
+    habitat: "Lowland and montane forests in the Philippines",
+    threats: "Habitat loss and fragmentation",
+    protection: "Protected under Philippine law",
+  },
+  {
+    image:
+      "https://coffeeandcreatures.co.uk/wp-content/uploads/2019/02/90184023_m-1.jpg?w=1200",
+    name: "Philippine Sailfin Lizard",
+    scientificName: "Hydrosaurus pustulatus",
+    status: "Least Concern",
+    features:
+      "A large, semi-aquatic lizard, commonly found in rivers and streams.",
+    size: "Length: 1.5 m",
+    habitat: "Rivers and streams in the Philippines",
+    threats: "Habitat degradation and collection for trade",
+    protection: "Protected under Philippine law",
+  },
+  {
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVnngU94SmpweZ34WHS-UVvawuxhS_V-w7Xg&s",
+    name: "Gray’s Monitor Lizard (Butaan)",
+    scientificName: "Varanus olivaceus",
+    status: "Vulnerable",
+    features: "A large, terrestrial lizard found in forests and grasslands.",
+    size: "Length: 1.5 m",
+    habitat: "Forests and grasslands of the Philippines",
+    threats: "Illegal hunting and habitat loss",
+    protection: "Protected under Philippine law",
+  },
+  {
+    image:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/13483650/original.jpg",
+    name: "Northern Sierra Madre Forest Monitor",
+    scientificName: "Varanus bitatawa",
+    status: "Endangered",
+    features:
+      "A rare species found in the rainforests of the Sierra Madre mountains.",
+    size: "Length: 1.8 m",
+    habitat: "Lowland rainforests of the Sierra Madre in Luzon",
+    threats: "Deforestation and hunting",
+    protection: "Protected under Philippine law",
+  },
+  {
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpt7tRnRRRad2I4LYgrFcEonWCiyZNStZe4w&s",
+    name: "Palawan Water Monitor",
+    scientificName: "Varanus palawanensis",
+    status: "Least Concern",
+    features: "A semi-aquatic monitor lizard native to Palawan.",
+    size: "Length: 1.5 m",
+    habitat: "Rivers and streams in Palawan",
+    threats: "Habitat loss and hunting",
+    protection: "Protected under Philippine law",
+  },
+  {
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLqq5C7xgBuFQ8YqdXO_ciIBZ8ScdF-WcNjQ&s",
+    name: "Panay Monitor Lizard",
+    scientificName: "Varanus mabitang",
+    status: "Vulnerable",
+    features: "A large monitor lizard found in rocky hills and forests.",
+    size: "Length: 2 m",
+    habitat: "Rocky hills and forests in Panay",
+    threats: "Habitat loss and illegal trade",
+    protection: "Protected under Philippine law",
+  },
+  {
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIhvLyQQDT-wFDBxFLKbwDtTb4o3z6Mee1Yg&s",
+    name: "Samar Cobra",
+    scientificName: "Naja samarensis",
+    status: "Endangered",
+    features: "A venomous snake endemic to Samar and nearby islands.",
+    size: "Length: 1.5 m",
+    habitat: "Forests of Samar and nearby islands",
+    threats: "Habitat destruction and snakebite incidents",
+    protection: "Protected under Philippine law",
+  },
+  {
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRPx_6Ri4IzNlgX0H1aCbq5wlz3eKm9_l72Q&s",
+    name: "Marbled Water Monitor",
+    scientificName: "Varanus marmoratus",
+    status: "Least Concern",
+    features: "A water-dwelling lizard with distinctive marbled patterns.",
+    size: "Length: 1.5 m",
+    habitat: "Rivers and forests of the Philippines",
+    threats: "Habitat loss and illegal trade",
+    protection: "Protected under Philippine law",
+  },
+  {
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznwZTeF0IC6BVf3VK9WUktC1Ah9UeeMS5yg&s",
+    name: "Philippine Pit Viper",
+    scientificName: "Trimeresurus flavomaculatus",
+    status: "Least Concern",
+    features: "A venomous snake found in lowland forests and grasslands.",
+    size: "Length: 1.2 m",
+    habitat: "Lowland forests and grasslands in the Philippines",
+    threats: "Habitat destruction",
+    protection: "Protected under Philippine law",
+  },
+  {
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqdfD8rit8iSZI2TyVpnuAiGnLeqD1HNGFnw&s",
+    name: "Taylor’s Igorot Frog",
+    scientificName: "Rana igorota",
+    status: "Vulnerable",
+    features: "A small frog found in mountain forests.",
+    size: "Length: 6 cm",
+    habitat: "Mountain forests in the Philippines",
+    threats: "Habitat destruction and climate change",
+    protection: "Protected under Philippine law",
+  },
+  {
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWMSN5tbF_bF0-t2qPxTT8D1uFiAUEjmCeEg&s",
+    name: "Leyte Rough Gecko",
+    scientificName: "Gekko cf. reevesii",
+    status: "Endangered",
+    features: "A small gecko native to the forests of Leyte.",
+    size: "Length: 15 cm",
+    habitat: "Forests of Leyte",
+    threats: "Habitat loss and collection for the pet trade",
+    protection: "Protected under Philippine law",
+  },
+  {
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfwdcw0RkNfIvYCs4FhlB8u1ZUFgJr9oCClw&s",
+    name: "Philippine Bent-toed Gecko",
+    scientificName: "Cyrtodactylus philippinensis",
+    status: "Near Threatened",
+    features:
+      "A gecko found in various forest habitats across the Philippines.",
+    size: "Length: 10 cm",
+    habitat: "Forests of the Philippines",
+    threats: "Habitat loss and illegal trade",
+    protection: "Protected under Philippine law",
+  },
+  {
+    image: "https://static.inaturalist.org/photos/29214589/medium.jpg",
+    name: "Cebu Small Worm Gecko",
+    scientificName: "Brachymeles cebuensis",
+    status: "Endangered",
+    features: "A small, nocturnal gecko endemic to Cebu.",
+    size: "Length: 10 cm",
+    habitat: "Forest and grasslands of Cebu",
+    threats: "Habitat destruction and collection for trade",
+    protection: "Protected under Philippine law",
+  },
+  {
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_9z-R_9hDvxqoWhbIABpMu5I4Wj1QiqKTHQ&s",
+    name: "Philippine Flying Dragon",
+    scientificName: "Draco philippinensis",
+    status: "Least Concern",
+    features: "A small flying lizard native to the forests of the Philippines.",
+    size: "Length: 20 cm",
+    habitat: "Forests in the Philippines",
+    threats: "Habitat destruction",
+    protection: "Protected under Philippine law",
+  },
+  {
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX3UHUieEnsqUxteQlRMYMOnEFco-Yyma1xw&s",
+    name: "Mindanao Water Skink",
+    scientificName: "Tropidophorus mindanaoensis",
+    status: "Least Concern",
+    features: "A water skink found in rivers and streams of Mindanao.",
+    size: "Length: 20 cm",
+    habitat: "Rivers and streams in Mindanao",
+    threats: "Habitat degradation",
+    protection: "Protected under Philippine law",
+  },
+  {
+    image:
+      "https://lh3.ggpht.com/Lo_uU-6DMETSVgUNY0z_u4IcUCwCBKRHxrV40q2_ABC15OqW_oVqBudhpiP8WT7xrVN2we78Obd8jbbfyCk=s985",
+    name: "Negros Forest Dragon",
+    scientificName: "Gonocephalus negrosensis",
+    status: "Endangered",
+    features: "A forest dragon found only in the mountain forests of Negros.",
+    size: "Length: 50 cm",
+    habitat: "Mountain forests of Negros",
+    threats: "Deforestation and illegal hunting",
+    protection: "Protected under Philippine law",
+  },
+  {
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbvCaaegWr2V1f4A4jV_kv83LTYlKdFXqF5g&s",
+    name: "Luzon Forest Dragon",
+    scientificName: "Gonocephalus luzonensis",
+    status: "Vulnerable",
+    features: "A dragon species endemic to Luzon’s lowland forests.",
+    size: "Length: 60 cm",
+    habitat: "Lowland forests of Luzon",
+    threats: "Habitat loss and hunting",
+    protection: "Protected under Philippine law",
+  },
+  {
+    image:
+      "https://i0.wp.com/gonefroggin.com/wp-content/uploads/2023/04/large.jpeg?fit=1024%2C768&ssl=1",
+    name: "Sulu Horned Frog",
+    scientificName: "Megophrys suluensis",
+    status: "Endangered",
+    features:
+      "A small frog with distinctive horns, native to the Sulu Archipelago.",
+    size: "Length: 10 cm",
+    habitat: "Rainforests of Sulu",
+    threats: "Habitat destruction",
+    protection: "Protected under Philippine law",
+  },
+  {
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThg7i2HPxwq8yyA-xpXcqfqEz5EksdMZyGkA&s",
+    name: "Mount Banahaw Forest Frog",
+    scientificName: "Rana banahensis",
+    status: "Endangered",
+    features: "A forest frog found only in the Mount Banahaw region.",
+    size: "Length: 7 cm",
+    habitat: "Mount Banahaw forests",
+    threats: "Habitat destruction and climate change",
+    protection: "Protected under Philippine law",
+  },
+  {
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRibmLEhAqP1ZLJa1YFNG4cuSO1c-T1Xc7nCQ&s",
+    name: "Polillo Island Skink",
+    scientificName: "Brachymeles elerae",
+    status: "Endangered",
+    features: "A skink species found only in the forests of Polillo Island.",
+    size: "Length: 20 cm",
+    habitat: "Polillo Island's forests",
+    threats: "Deforestation and illegal trade",
+    protection: "Protected under Philippine law",
+  },
+  {
+    image:
+      "https://animalsoftanay.home.blog/wp-content/uploads/2019/05/common-sun-nueva-vizcaya-tony-gerard-3.jpg?w=1024",
+    name: "Bicol Ground Skink",
+    scientificName: "Brachymeles bicolandia",
+    status: "Endangered",
+    features:
+      "A small skink species found in the Bicol region’s ground habitat.",
+    size: "Length: 12 cm",
+    habitat: "Ground in the Bicol region",
+    threats: "Habitat loss and collection for trade",
+    protection: "Protected under Philippine law",
+  },
 ];
 
 export default animalData;

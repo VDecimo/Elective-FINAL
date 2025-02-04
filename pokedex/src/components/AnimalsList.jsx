@@ -37,7 +37,7 @@ export default function AnimalsList({ setSelectedAnimal, selectedAnimal }) {
                   <strong>Habitat:</strong> {data.habitat}
                 </p>
                 <p className="text-sm break-all">
-                  <strong>Threat:</strong> {data.threats}
+                  <strong>Threats:</strong> {data.threats}
                 </p>
                 <p className="text-sm break-all">
                   <strong>Protection:</strong> {data.protection}
