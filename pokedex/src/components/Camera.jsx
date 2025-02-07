@@ -63,7 +63,7 @@ export default function Camera({
           bestMatch.className
         } with probability: ${bestMatch.probability.toFixed(2)}`
       );
-    }
+    }s
   };
 
   return (
