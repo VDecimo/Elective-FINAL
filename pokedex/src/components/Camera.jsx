@@ -1,7 +1,9 @@
 import { useState, useEffect, useRef } from "react";
 import * as tmImage from "@teachablemachine/image";
+import animalData from "../AnimalData";
 
-const model_url = "https://teachablemachine.withgoogle.com/models/PzUPM4bAl/"; //Ito ang Magic Model ni Teachable Machine
+
+const model_url = "https://teachablemachine.withgoogle.com/models/8ZFwX7j5b/"; //Ito ang Magic Model ni Teachable Machine
 const modelURL = model_url + "model.json";
 const metadataURL = model_url + "metadata.json";
 
@@ -47,22 +49,20 @@ export default function Camera({
   const handleCapture = async () => {
     if (model && webcam) {
       const predictions = await model.predict(webcam.canvas);
+      const sortedArray = [...predictions].sort((a, b) => b.probability - a.probability);
 
-      // Find the highest probability prediction
-      const bestMatch = predictions.reduce((max, p) =>
-        p.probability > max.probability ? p : max
-      );
+      let result = [];
+      for (let i = 0; i < 3; i++) {
+         const animal = animalData.find((animal) => animal.id == sortedArray[i].className);
+         result.push({animal, probability: (sortedArray[i].probability *100).toFixed(2)});
+        }
+      console.log(result);
 
-      setResults(bestMatch.className);
+
+      setResults(result);
       setPrevComponent(activeComponent);
       setActiveComponent("description");
 
-      //Show The Best Match and Its Probability
-      alert(
-        `Best match: ${
-          bestMatch.className
-        } with probability: ${bestMatch.probability.toFixed(2)}`
-      );
     }
   };
 

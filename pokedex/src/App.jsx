@@ -5,6 +5,8 @@ import leftArrow from "./assets/left-arrow.svg";
 import backgroundImage from "./assets/background.jpg";
 import "./App.css";
 import LandingState from "./components/LandingState";
+import AnimalDescription from "./components/AnimalDescription";
+
 
 function App() {
   const [activeComponent, setActiveComponent] = useState("landing");
@@ -80,16 +82,24 @@ function App() {
             />
           )}
 
-          {activeComponent === "camera" && (
-            <Camera
-              setActiveComponent={setActiveComponent}
-              setPrevComponent={setPrevComponent}
-              setResults={setResults}
-              activeComponent={activeComponent}
-            />
-          )}
-        </div>
-      )}
+
+        {/* Camera Component */}
+        {activeComponent === "camera" && (
+          <Camera
+            setActiveComponent={setActiveComponent}
+            setPrevComponent={setPrevComponent}
+            setResults={setResults}
+            activeComponent={activeComponent}
+          />
+        )}
+
+        {/* Animal Description Component */}
+        {activeComponent === "description" && (
+          <AnimalDescription results={results} />
+        )}
+
+      </div>
+
     </div>
   );
 }
