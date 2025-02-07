@@ -30,7 +30,7 @@ const animalData = [
   {
     Animal_ID: 3,
     image:
-      "https://mytraveldigest.wordpress.com/wp-content/uploads/2015/09/crispy-fried-tawilis-nutrition-facts.jpg?w=1200",
+      "https://upload.wikimedia.org/wikipedia/commons/0/06/Tawilis_%28Sardinella_tawilis%29%2C_an_endemic_fish_that_can_only_be_found_in_Taal_Lake.jpg",
     name: "Tawilis",
     scientificName: "Sardinella tawilis",
     status: "Endangered",
@@ -114,16 +114,21 @@ const animalData = [
   },
   {
     Animal_ID: 9,
-    image: "https://www.ecoticias.com/wp-content/uploads/2024/01/Rana-filipina-Barbourula-busuangensis-1-1536x1024.jpg",
+    image:
+      "https://www.ecoticias.com/wp-content/uploads/2024/01/Rana-filipina-Barbourula-busuangensis-1-1536x1024.jpg",
     name: "Philippine Flat-headed Frog",
     scientificName: "Barbourula busuangensis",
     status: "Vulnerable",
     size: "Up to 7 cm in length",
-    habitat: "Clear, fast-flowing streams in lowland and montane forests of Palawan, Philippines",
-    threats: "Habitat destruction due to deforestation, mining, and water pollution",
-    protection: "Some protection within designated conservation areas in Palawan",
-    features: "A fully aquatic, lungless frog with a flattened body adapted for life in swift-moving waters."
-},
+    habitat:
+      "Clear, fast-flowing streams in lowland and montane forests of Palawan, Philippines",
+    threats:
+      "Habitat destruction due to deforestation, mining, and water pollution",
+    protection:
+      "Some protection within designated conservation areas in Palawan",
+    features:
+      "A fully aquatic, lungless frog with a flattened body adapted for life in swift-moving waters.",
+  },
   {
     Animal_ID: 10,
     image:
@@ -247,6 +252,78 @@ const animalData = [
     threats: "Overfishing, habitat degradation",
     protection: "CITES Appendix II, national laws in many countries",
   },
-]
+  {
+    Animal_ID: 19,
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzKfH5eVdvGcULe-f6K1mFKZJqdTMs5fY5p3anIEef3B0HBSqrU8qzaBWkxhJZGqk1WtY&usqp=CAU",
+    name: "Northern Luzon Giant Cloud Rat",
+    scientificName: "Phloeomys pallidus",
+    status: "Near Threatened",
+    features:
+      "A large, slow-moving rodent with thick fur, primarily active at night in Luzon forests.",
+    size: "Length: 45-50 cm, Weight: 1.5-2.3 kg",
+    habitat: "Northern Luzon, Philippines",
+    threats: "Habitat destruction, Hunting",
+    protection: "Protected by Philippine law",
+  },
+  {
+    Animal_ID: 20,
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTudxpaGspedKWB6PL5LrPgloakpZAN6Tdmzw&s",
+    name: "Giant Golden-crowned Flying Fox",
+    scientificName: "Acerodon jubatus",
+    status: "Endangered",
+    features:
+      "Large fruit bat with golden fur on its head and large wingspans, feeding primarily on fruit.",
+    size: "Wingspan: 1.5-1.7 m, Weight: 0.7-1.2 kg",
+    habitat: "Forests of the Philippines",
+    threats: "Hunting, Habitat destruction",
+    protection: "Protected by Philippine law, CITES Appendix I",
+  },
+  {
+    Animal_ID: 21,
+    image:
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhpYE5fAPNqf4zy3VhnVFsMAvMltUhytaOXCf_zVhnxl6f3aIfr6FVQmxkgSCGchBkq3KqA_kPVuKX-v0xtSnSPVecTaXxRTI6QVSBJFkKy5FFL_xWMgj7CPiZCeUIARdZasZZYFx7eGWys/s1600/palawan-stink-badger-wild-mydaus-marchei.jpg.jpg",
+    name: "Palawan Stink Badger",
+    scientificName: "Mydaus marchei",
+    status: "Least Concern",
+    features:
+      "Small, stout, with a stinky odor for defense, covered in coarse fur with a white stripe down its back.",
+    size: "Length: 32-46 cm, Weight: 1.4-3.6 kg",
+    habitat: "Forests of Palawan",
+    threats: "Deforestation, Hunting",
+    protection: "Protected by Philippine law",
+  },
+  {
+    Animal_ID: 22,
+    image:
+      "https://scontent.fmnl40-2.fna.fbcdn.net/v/t39.30808-6/305761722_394160552878931_3958788724069880923_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeF_OQC4-1gdhthiFm0F6BUWJWsdyl074xMlax3KXTvjE0oBmhmp4FMGyT34DasLLeGE6Qvq6oBjIwHb_hpE_ax3&_nc_ohc=B0_zRKvDv40Q7kNvgHSqDOi&_nc_oc=Adib5kEWst-Gl0TtVV2ou_0EWOU5YloQfawphh4G2-SKQq-v0KXmpRUOPrVUSFfBEAs&_nc_zt=23&_nc_ht=scontent.fmnl40-2.fna&_nc_gid=AGaPoBXtttRskQKNZDq7G-D&oh=00_AYDEwC28g3OKPeD_L73BfvHx_7dmpNADNU5YwaCMUUof1Q&oe=67ABA3CA",
+    name: "Pawikan",
+    scientificName: "Cheloniidae & Dermochelyidae",
+    status: "Endangered to Critically Endangered (varies by species)",
+    features:
+      "Large, streamlined body with flipper-like limbs, a hard or leathery shell, and the ability to migrate long distances.",
+    size: "Varies by species, up to 2 meters in length, weighing 70 to 900 kg",
+    habitat: "Tropical and subtropical oceans, nesting on sandy beaches",
+    threats:
+      "Poaching, habitat destruction, plastic pollution, accidental capture in fishing gear",
+    protection:
+      "Philippine law, IUCN Red List, international conservation agreements",
+  },
+  {
+    Animal_ID: 23,
+    image:
+      "https://i0.wp.com/ayej.org/wp-content/uploads/2021/06/kalibasib.jpeg?fit=960%2C701&ssl=1",
+    name: "Tamaraw",
+    scientificName: "Bubalus mindorensis",
+    status: "Critically Endangered",
+    features:
+      "Small, stocky buffalo with a dark brown coat, small, forward-pointing horns, and a robust body.",
+    size: "Up to 1.2 meters at the shoulder, weighing 250 to 300 kg",
+    habitat: "Montane forests on Mindoro Island",
+    threats: "Habitat loss, hunting, human-wildlife conflict",
+    protection: "Philippine law, IUCN Red List",
+  },
+];
 
 export default animalData;
