@@ -4,6 +4,7 @@ import Camera from "./components/Camera";
 import leftArrow from "./assets/left-arrow.svg";
 import backgroundImage from "./assets/background.jpg";
 import "./App.css";
+import AnimalDescription from "./components/AnimalDescription";
 
 function App() {
   // Set which component is active
@@ -79,6 +80,12 @@ function App() {
             activeComponent={activeComponent}
           />
         )}
+
+        {/* Animal Description Component */}
+        {activeComponent === "description" && (
+          <AnimalDescription results={results} />
+        )}
+
       </div>
     </div>
   );

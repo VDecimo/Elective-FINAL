@@ -1,6 +1,6 @@
 const animalData = [
   {
-    Animal_ID: 1,
+    id: 1,
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGG7P_zbxf-hSjclrAUCPnmPsCP3tMinccRw&s",
     name: "Atlas Moth (Philippine subspecies)",
@@ -14,7 +14,7 @@ const animalData = [
       "One of the largest moths in the world, known for its large, striking wings with intricate patterns.",
   },
   {
-    Animal_ID: 2,
+    id: 2,
     image:
       "https://files.worldwildlife.org/wwfcmsprod/images/Dugong_swimming/story_full_width/3q79r2m8gv_Medium_WW1221.jpg",
     name: "Dugong",
@@ -28,7 +28,7 @@ const animalData = [
     protection: "CITES Appendix I, national laws",
   },
   {
-    Animal_ID: 3,
+    id: 3,
     image:
       "https://upload.wikimedia.org/wikipedia/commons/0/06/Tawilis_%28Sardinella_tawilis%29%2C_an_endemic_fish_that_can_only_be_found_in_Taal_Lake.jpg",
     name: "Tawilis",
@@ -41,7 +41,7 @@ const animalData = [
     protection: "Philippine law, IUCN Red List",
   },
   {
-    Animal_ID: 4,
+    id: 4,
     image:
       "https://cdn.download.ams.birds.cornell.edu/api/v2/asset/267125321/900",
     name: "Philippine Scops Owl",
@@ -55,7 +55,7 @@ const animalData = [
     protection: "Protected under Philippine law",
   },
   {
-    Animal_ID: 5,
+    id: 5,
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGpT-LdT0CCyrHpmodF3s0icTIcmVavtuBrA&s",
     name: "Negros Bleeding-Heart",
@@ -68,7 +68,7 @@ const animalData = [
     protection: "Strictly protected under Philippine law",
   },
   {
-    Animal_ID: 6,
+    id: 6,
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4FXSQhUPFAdAuzjgerljTQuSAXL-5Qw7pow&s",
     name: "Philippine Cockatoo",
@@ -83,7 +83,7 @@ const animalData = [
     protection: "Protected by law; conservation efforts ongoing in Palawan",
   },
   {
-    Animal_ID: 7,
+    id: 7,
     image:
       "https://cdn.britannica.com/75/253875-050-8B6C565B/philippine-crocodile-Crocodylus-mindorensis-mindoro-crocodile-freshwater.jpg",
     name: "Philippine Crocodile",
@@ -99,7 +99,7 @@ const animalData = [
       "A small freshwater crocodile endemic to the Philippines, known for its pale coloration and small size compared to other crocodiles.",
   },
   {
-    Animal_ID: 8,
+    id: 8,
     image:
       "https://imgs.mongabay.com/wp-content/uploads/sites/20/2019/10/30041242/1Y1A9576.jpg",
     name: "Philippine Eagle",
@@ -113,7 +113,7 @@ const animalData = [
     protection: "Philippine law, IUCN Red List, CITES Appendix I",
   },
   {
-    Animal_ID: 9,
+    id: 9,
     image:
       "https://www.ecoticias.com/wp-content/uploads/2024/01/Rana-filipina-Barbourula-busuangensis-1-1536x1024.jpg",
     name: "Philippine Flat-headed Frog",
@@ -130,7 +130,7 @@ const animalData = [
       "A fully aquatic, lungless frog with a flattened body adapted for life in swift-moving waters.",
   },
   {
-    Animal_ID: 10,
+    id: 10,
     image:
       "https://www.rekoforest.org/wp-content/uploads/2021/09/rer-sunda-flying-lemur.jpg",
     name: "Philippine Flying Lemur",
@@ -144,7 +144,7 @@ const animalData = [
     protection: "--",
   },
   {
-    Animal_ID: 11,
+    id: 11,
     image:
       "https://inaturalist-open-data.s3.amazonaws.com/photos/66040756/original.jpeg",
     name: "Philippine Goby",
@@ -157,7 +157,7 @@ const animalData = [
     protection: "Philippine law, IUCN Red List",
   },
   {
-    Animal_ID: 12,
+    id: 12,
     image:
       "https://images.squarespace-cdn.com/content/v1/5734f2a086db43e3f6fb1bbc/1570730445121-2IL9CST07GC0PE6HAVQ2/Happy+together+-+Gino+Symus.jpg?format=1500w",
     name: "Philippine Seahorse",
@@ -171,7 +171,7 @@ const animalData = [
     protection: "CITES Appendix II",
   },
   {
-    Animal_ID: 13,
+    id: 13,
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP-tEL-WZWOLnRpDIxGfnudh5XP5MEuaxaEQ&s",
     name: "Philippine Stag Beetle",
@@ -184,7 +184,7 @@ const animalData = [
     features: "A large beetle with prominent antler-like horns.",
   },
   {
-    Animal_ID: 14,
+    id: 14,
     image: "https://cdn.britannica.com/26/155226-050-39CB355F/Tarsier.jpg",
     name: "Tarsier",
     scientificName: "Carlito syrichta",
@@ -197,7 +197,7 @@ const animalData = [
     protection: "Philippine law (Republic Act 9147), CITES Appendix II",
   },
   {
-    Animal_ID: 15,
+    id: 15,
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkKfaCIuCmtYYhRM3YaMTNP-Yt5Ke1SjobLw&s",
     name: "Philippine Tube-nosed Fruit Bat",
@@ -211,7 +211,7 @@ const animalData = [
     protection: "Protected by Philippine law, CITES Appendix II",
   },
   {
-    Animal_ID: 16,
+    id: 16,
     image:
       "https://upload.wikimedia.org/wikipedia/commons/2/2e/Philippine_warty_pig_%28Sus_philippensis%29_in_Philippine_Eagle_Center%2C_Davao%2C_Philippines.jpg",
     name: "Philippine Warty Pig",
@@ -225,7 +225,7 @@ const animalData = [
     protection: "Protected under Philippine law",
   },
   {
-    Animal_ID: 17,
+    id: 17,
     image:
       "https://coffeeandcreatures.co.uk/wp-content/uploads/2019/09/visayan-spotted-deer-by-kevin.jpg",
     name: "Visayan Spotted Deer",
@@ -239,7 +239,7 @@ const animalData = [
     protection: "Philippine law (Republic Act 9147), CITES Appendix I",
   },
   {
-    Animal_ID: 18,
+    id: 18,
     image:
       "https://png.pngtree.com/thumb_back/fw800/background/20240424/pngtree-whale-shark-open-mouth-close-up-portrait-underwater-image_15666716.jpg",
     name: "Whale Shark",
@@ -253,7 +253,7 @@ const animalData = [
     protection: "CITES Appendix II, national laws in many countries",
   },
   {
-    Animal_ID: 19,
+    id: 19,
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzKfH5eVdvGcULe-f6K1mFKZJqdTMs5fY5p3anIEef3B0HBSqrU8qzaBWkxhJZGqk1WtY&usqp=CAU",
     name: "Northern Luzon Giant Cloud Rat",
@@ -267,7 +267,7 @@ const animalData = [
     protection: "Protected by Philippine law",
   },
   {
-    Animal_ID: 20,
+    id: 20,
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTudxpaGspedKWB6PL5LrPgloakpZAN6Tdmzw&s",
     name: "Giant Golden-crowned Flying Fox",
@@ -281,7 +281,7 @@ const animalData = [
     protection: "Protected by Philippine law, CITES Appendix I",
   },
   {
-    Animal_ID: 21,
+    id: 21,
     image:
       "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhpYE5fAPNqf4zy3VhnVFsMAvMltUhytaOXCf_zVhnxl6f3aIfr6FVQmxkgSCGchBkq3KqA_kPVuKX-v0xtSnSPVecTaXxRTI6QVSBJFkKy5FFL_xWMgj7CPiZCeUIARdZasZZYFx7eGWys/s1600/palawan-stink-badger-wild-mydaus-marchei.jpg.jpg",
     name: "Palawan Stink Badger",
@@ -295,11 +295,11 @@ const animalData = [
     protection: "Protected by Philippine law",
   },
   {
-    Animal_ID: 22,
+    id: 22,
     image:
       "https://scontent.fmnl40-2.fna.fbcdn.net/v/t39.30808-6/305761722_394160552878931_3958788724069880923_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeF_OQC4-1gdhthiFm0F6BUWJWsdyl074xMlax3KXTvjE0oBmhmp4FMGyT34DasLLeGE6Qvq6oBjIwHb_hpE_ax3&_nc_ohc=B0_zRKvDv40Q7kNvgHSqDOi&_nc_oc=Adib5kEWst-Gl0TtVV2ou_0EWOU5YloQfawphh4G2-SKQq-v0KXmpRUOPrVUSFfBEAs&_nc_zt=23&_nc_ht=scontent.fmnl40-2.fna&_nc_gid=AGaPoBXtttRskQKNZDq7G-D&oh=00_AYDEwC28g3OKPeD_L73BfvHx_7dmpNADNU5YwaCMUUof1Q&oe=67ABA3CA",
     name: "Pawikan",
-    scientificName: "Cheloniidae & Dermochelyidae",
+    scientificName: "Cheloniidae",
     status: "Endangered to Critically Endangered (varies by species)",
     features:
       "Large, streamlined body with flipper-like limbs, a hard or leathery shell, and the ability to migrate long distances.",
@@ -311,7 +311,7 @@ const animalData = [
       "Philippine law, IUCN Red List, international conservation agreements",
   },
   {
-    Animal_ID: 23,
+    id: 23,
     image:
       "https://i0.wp.com/ayej.org/wp-content/uploads/2021/06/kalibasib.jpeg?fit=960%2C701&ssl=1",
     name: "Tamaraw",
