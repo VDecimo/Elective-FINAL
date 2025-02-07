@@ -53,7 +53,7 @@ export default function AnimalsList({ setSelectedAnimal, selectedAnimal }) {
             <h1 className="text-3xl font-bold">BANTAYBUHAY</h1>
             <button
               onClick={closeModal}
-              className="group cursor-pointer absolute top-6 right-5.5 hover:border-black hover:border-3 transition-opacity duration-300 ease-in-out right-2 bg-red-500 text-white text-md font-bold w-8 h-8 rounded-full flex items-center justify-center hover:bg-red-600"
+              className="group cursor-pointer absolute top-6 hover:border-black hover:border-3 transition-opacity duration-300 ease-in-out right-2 bg-red-500 text-white text-md font-bold w-8 h-8 rounded-full flex items-center justify-center hover:bg-red-600"
             >
               <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
                 ✕

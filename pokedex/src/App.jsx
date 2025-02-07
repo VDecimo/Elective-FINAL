@@ -4,10 +4,11 @@ import Camera from "./components/Camera";
 import leftArrow from "./assets/left-arrow.svg";
 import backgroundImage from "./assets/background.jpg";
 import "./App.css";
+import LandingState from "./components/LandingState";
 
 function App() {
   // Set which component is active
-  const [activeComponent, setActiveComponent] = useState("animals");
+  const [activeComponent, setActiveComponent] = useState("landing");
   // Set the prev component rendenred
   const [prevComponent, setPrevComponent] = useState(null);
   // Store the results of the image
@@ -38,6 +39,11 @@ function App() {
 
   return (
     <div className="flex h-screen items-center justify-center md:py-10 bg-cover bg-center bg-[image:url('./assets/background.jpg')]">
+          {activeComponent === "landing" ? 
+          <LandingState 
+          activeComponent={activeComponent} 
+          setActiveComponent={setActiveComponent}
+          /> : (
       <div className="w-full md:w-[600px] h-full flex flex-col font-jura p-4 pb-6 bg-white rounded shadow-[4px_4px_0px_5px_#2e2e2e]">
         <nav className="flex h-10 mb-2 items-center justify-between">
           <img
@@ -48,6 +54,7 @@ function App() {
             src={leftArrow}
             alt="Back"
           />
+
           <h1 className="text-3xl font-bold">BANTAYBUHAY</h1>
           {activeComponent === "animals" ? (
             <button
@@ -80,6 +87,7 @@ function App() {
           />
         )}
       </div>
+          )}
     </div>
   );
 }
