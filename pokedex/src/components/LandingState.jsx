@@ -1,7 +1,7 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 import animalData from "../AnimalData";
 
-export default function LandingState({ activeComponent, setActiveComponent }) {
+const LandingState = ({ fadeOut }) => {
     const [showContent, setShowContent] = useState(false);
     const [splash2, setSplash2] = useState(false);
     const [showButton, setShowButton] = useState(false);
@@ -31,20 +31,20 @@ export default function LandingState({ activeComponent, setActiveComponent }) {
 
     const renderAnimalSlide = (animals) => (
         <>
-          {animals.map((animal, index) => (
-            <div key={index} className="w-24 h-24 bg-white rounded shadow-lg mx-2.5">
-              <img
-                src={animal.image || "/placeholder.svg"}
-                alt={animal.name}
-                className="w-full h-full object-cover rounded"
-              />
-            </div>
-          ))}
+            {animals.map((animal, index) => (
+                <div key={index} className="w-24 h-24 bg-white rounded shadow-lg mx-2.5">
+                    <img
+                        src={animal.image || "/placeholder.svg"}
+                        alt={animal.name}
+                        className="w-full h-full object-cover rounded"
+                    />
+                </div>
+            ))}
         </>
-      )
+    )
 
     return (
-        <div className="flex h-full">
+        <div className={`relative w-full h-full ${fadeOut ? "fade-out" : ""}`}>
             <div className="flex flex-col items-center justify-center h-full space-y-4 flex-1">
                 <div className="flex flex-col items-center justify-center space-y-4 pb-12">
                     <h1 className="text-8xl font-bold splash">
@@ -64,13 +64,6 @@ export default function LandingState({ activeComponent, setActiveComponent }) {
                         time.
                     </p>
                 </div>
-                <button
-                    className={`invisible border p-3 text-2xl font-semibold transition-all duration-300 ${showButton ? "visible pop hover:scale-105" : ""
-                        }`}
-                    onClick={() => setActiveComponent("animals")}
-                >
-                    Proceed
-                </button>
             </div>
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden pop">
                 <div className="logos-container top-0 pt-4">
@@ -85,4 +78,6 @@ export default function LandingState({ activeComponent, setActiveComponent }) {
 
         </div>
     );
-}
+};
+
+export default LandingState;
