@@ -41,7 +41,22 @@
     overflow: hidden;
     animation: typing 2s steps(40, end), cursor .5s step-end infinite alternate;
 }
-
+.text2{
+    font-family: monospace;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 1s steps(15, end), cursor .5s step-end infinite alternate;
+}
+.text3{
+    font-family: monospace;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 1s steps(25, end), cursor .5s step-end infinite alternate;
+}
 @keyframes slide {
     from {
         transform: translateX(0);
@@ -75,7 +90,10 @@
     animation: slide 30s linear infinite;
 }
 
-.logos-slide.reverse {
+.logos-slide-reverse {
+    display: flex;
+    width: 100%;
+    animation: slide 30s linear infinite;
     animation-direction: reverse;
 }
 

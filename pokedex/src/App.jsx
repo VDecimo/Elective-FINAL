@@ -7,7 +7,6 @@ import "./App.css";
 import LandingState from "./components/LandingState";
 import AnimalDescription from "./components/AnimalDescription";
 
-
 function App() {
   const [activeComponent, setActiveComponent] = useState("landing");
   const [prevComponent, setPrevComponent] = useState(null);
@@ -45,7 +44,7 @@ function App() {
   };
 
   return (
-    <div className="flex h-screen items-center justify-center md:py-10 bg-cover bg-center bg-[image:url('./assets/background.jpg')]">
+    <div className="flex h-screen items-center justify-center md:py-10 bg-cover bg-center" style={{ backgroundImage: `url(${backgroundImage})` }}>
       {activeComponent === "landing" ? (
         <LandingState
           activeComponent={activeComponent}
@@ -82,24 +81,22 @@ function App() {
             />
           )}
 
+          {/* Camera Component */}
+          {activeComponent === "camera" && (
+            <Camera
+              setActiveComponent={setActiveComponent}
+              setPrevComponent={setPrevComponent}
+              setResults={setResults}
+              activeComponent={activeComponent}
+            />
+          )}
 
-        {/* Camera Component */}
-        {activeComponent === "camera" && (
-          <Camera
-            setActiveComponent={setActiveComponent}
-            setPrevComponent={setPrevComponent}
-            setResults={setResults}
-            activeComponent={activeComponent}
-          />
-        )}
-
-        {/* Animal Description Component */}
-        {activeComponent === "description" && (
-          <AnimalDescription results={results} />
-        )}
-
-      </div>
-
+          {/* Animal Description Component */}
+          {activeComponent === "description" && (
+            <AnimalDescription results={results} />
+          )}
+        </div>
+      )}
     </div>
   );
 }

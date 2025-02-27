@@ -5,6 +5,19 @@ const LandingState = ({ fadeOut }) => {
     const [showContent, setShowContent] = useState(false);
     const [splash2, setSplash2] = useState(false);
     const [showButton, setShowButton] = useState(false);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -21,6 +34,7 @@ const LandingState = ({ fadeOut }) => {
 
         return () => clearTimeout(timer);
     }, []);
+
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowButton(true);
@@ -47,22 +61,21 @@ const LandingState = ({ fadeOut }) => {
         <div className={`relative w-full h-full ${fadeOut ? "fade-out" : ""}`}>
             <div className="flex flex-col items-center justify-center h-full space-y-4 flex-1">
                 <div className="flex flex-col items-center justify-center space-y-4 pb-12">
-                    <h1 className="text-8xl font-bold splash">
+                    <h1 className={`font-bold splash ${isMobile ? "text-4xl" : "text-8xl"}`}>
                         Bantay{" "}
                         <span
-                            className={`invisible text-green-400 ${splash2 && "visible splash"
-                                }`}
+                            className={`invisible text-green-400 ${splash2 && "visible splash"}`}
                         >
                             Buhay
                         </span>
                     </h1>
-                    <p
-                        className={`text-xl font-bold invisible ${showContent && "visible text"
-                            }`}
-                    >
-                        Spot. Learn. Protect. Saving endangered wildlife, one scan at a
-                        time.
-                    </p>
+                    {!isMobile && (
+                        <p
+                            className={`font-bold text-center invisible px-4 sm:px-0 ${showContent && "visible text"} ${isMobile ? "text-lg" : "text-xl"}`}
+                        >
+                            Spot. Learn. Protect. Saving endangered wildlife, one scan at a time.
+                        </p>
+                    )}
                 </div>
             </div>
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden pop">
@@ -71,11 +84,10 @@ const LandingState = ({ fadeOut }) => {
                     <div className="logos-slide">{renderAnimalSlide(animalData.slice(0, 12))}</div>
                 </div>
                 <div className="logos-container -bottom-12">
-                    <div className="logos-slide reverse">{renderAnimalSlide(animalData.slice(13, 24))}</div>
-                    <div className="logos-slide reverse">{renderAnimalSlide(animalData.slice(13, 24))}</div>
+                    <div className="logos-slide">{renderAnimalSlide(animalData.slice(13, 24))}</div>
+                    <div className="logos-slide">{renderAnimalSlide(animalData.slice(13, 24))}</div>
                 </div>
             </div>
-
         </div>
     );
 };

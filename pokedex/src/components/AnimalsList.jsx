@@ -49,7 +49,7 @@ export default function AnimalsList({ setSelectedAnimal, selectedAnimal }) {
 
       {selectedAnimal && (
         <div className="fixed inset-0 bg-black/60 flex justify-center items-center p-4">
-          <div className="relative bg-gray-200 w-full md:w-1/2 rounded-lg shadow-lg p-6 border-2 border-black jagged-border">
+          <div className="relative bg-gray-200 w-full max-w-xl md:max-w-md rounded-lg shadow-lg p-6 border-2 border-black jagged-border">
             <h1 className="text-3xl font-bold">BANTAYBUHAY</h1>
             <button
               onClick={closeModal}
